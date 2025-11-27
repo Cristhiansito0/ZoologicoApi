@@ -27,6 +27,7 @@ namespace ZoologicoApi.Models
         }
 
         // Método de error: No necesita recibir el tipo T en los parámetros
+
         public static ApiResult<T> ErrorResult(string errorMessage, int statusCode = 500)
         {
             return new ApiResult<T>
