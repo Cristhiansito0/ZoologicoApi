@@ -23,7 +23,7 @@ public class Program
                      options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
                      break;
                  case "Postgres":
-                     options.UseNpgsql(builder.Configuration.GetConnectionString("ZoologicoAPIConnection.posgres"));
+                     options.UseNpgsql(builder.Configuration.GetConnectionString("ZoologicoAPIConnection.postgres"));
                      break;
                  case "Oracle":
                      options.UseOracle(builder.Configuration.GetConnectionString("ZoologicoAPIConnection.oracle"));
@@ -45,7 +45,7 @@ public class Program
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            //if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
