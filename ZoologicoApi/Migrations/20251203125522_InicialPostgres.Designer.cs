@@ -11,7 +11,7 @@ using ZoologicoApi.Data;
 namespace ZoologicoApi.Migrations
 {
     [DbContext(typeof(ZoologicoContext))]
-    [Migration("20251127125731_InicialPostgres")]
+    [Migration("20251203125522_InicialPostgres")]
     partial class InicialPostgres
     {
         /// <inheritdoc />
